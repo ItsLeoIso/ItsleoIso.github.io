@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ItsLeo.Iso Photography</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ItsLeo.Iso</title>
     <style>
         body {
+            font-family: Times New Roman, sans-serif;
             margin: 0;
             padding: 0;
             background: white;
-            font-family: Times New Roman, sans-serif;
             color: black;
         }
-
-        /* HEADER */
         header {
             width: 100%;
             background: black;
@@ -25,56 +22,38 @@
             align-items: center;
             box-sizing: border-box;
         }
-
         header a {
             color: white;
             text-decoration: none;
             font-size: 20px;
         }
-
-        /* NAVIGATION LINKS CONTAINER */
         .nav-links {
             display: flex;
-            gap: 20px; /* Space between links */
+            gap: 20px;
             align-items: center;
         }
-
-        /* PHOTO GRID */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        /* Content container to add some spacing */
+        .content {
             padding: 40px;
-        }
-
-        .photo {
-            width: 100%;
-            overflow: hidden;
-            aspect-ratio: 1 / 1; /* maintain square shape */
-        }
-
-        .photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+            max-width: 800px;
+            margin: 0 auto; /* Centers the text */
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">ItsLeo.Iso</div>
-        <div class="nav-links"> <a href="about.html">About</a>
+        <div class="nav-links">
+            <a href="gallery.html">Gallery</a>
             <a href="https://www.instagram.com/itsleo.iso/" target="_blank">
                 &#x1F465; Insta
             </a>
         </div>
     </header>
 
-    <div class="gallery">
-        <div class="photo"><img src="Assets/DSC_0765.jpg" alt="Photo 1" /></div>
-        <div class="photo"><img src="Assets/DSC_0783.jpg" alt="Photo 2" /></div>
-        <div class="photo"><img src="Assets/DSC_0792.jpg" alt="Photo 3" /></div>
+    <div class="content">
+        <h1>About Me</h1>
+        <p>Hi! I'm Leo, a photographer passionate about capturing moments...</p>
     </div>
 </body>
 </html>
